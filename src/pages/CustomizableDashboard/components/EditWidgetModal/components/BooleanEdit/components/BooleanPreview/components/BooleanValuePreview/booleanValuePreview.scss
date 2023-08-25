@@ -1,0 +1,45 @@
+.boolean-preview-wrapper {
+  height: 100%;
+  width: 100%;
+  border-radius: 17px;
+  //display: flex;
+  //flex-flow: column;
+  //justify-content: center;
+}
+
+.boolean-widget-header {
+  // padding: 20px 0 0 20px;
+  padding: 10px 0 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.boolean-widget-header p {
+  color: #636363;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.boolean-header-icon {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.display-on-text {
+  font-weight: 800;
+  font-size: 2.2em;
+}
+
+.value-text-container {
+  display: flex;
+  align-items: center;
+  padding-left: 17px;
+  height: calc(100% - 70px);
+}
+
+.value-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

@@ -1,0 +1,85 @@
+.react-transform-wrapper {
+  height: 100%!important;
+  //cursor: grab;
+}
+.zoom-tools{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border: 1px solid #b7b7b7;
+  border-radius: 7px;
+}
+
+.plan-tools{
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.zoom-tools button {
+  background-color: white;
+  width: 45px;
+  height: 46px;
+}
+
+.zoom-tools button:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border: none;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, white 0%, white 48%, #f0f0f0 100%);
+  color: #4b9ac8;
+  box-shadow: 0 3px 4px -2px #b7b7b7;
+  z-index: 100;
+}
+
+.zoom-tools button:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border: none;
+}
+
+.upload-new-plan-btn {
+  background: #fff !important;
+  border-color: #b7b7b7 !important;
+  color: #787878 !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px !important;
+  max-height: 40px;
+  box-shadow: 0 3px 5px -1px RGB(0 0 0 / 20%), 0 6px 10px 0px RGB(0 0 0 / 14%), 0 1px 18px 0px RGB(0 0 0 / 12%);
+}
+
+.filter-button {
+  background: #fff !important;
+  border-color: #b7b7b7 !important;
+  color: #787878 !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 3px 5px -1px RGB(0 0 0 / 20%), 0 6px 10px 0px RGB(0 0 0 / 14%), 0 1px 18px 0px RGB(0 0 0 / 12%);
+}
+
+.filters-header {
+  background-color: #ffffff !important;
+}
+
+.filters-body {
+  width: 200px;
+}
+
+.filters-popper {
+  top: -7px !important;
+}
+
+.floor-map-container .react-grid-item.react-grid-placeholder {
+  background-color: transparent !important;
+}

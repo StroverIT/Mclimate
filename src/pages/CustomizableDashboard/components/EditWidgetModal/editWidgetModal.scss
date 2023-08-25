@@ -1,0 +1,21 @@
+.modal-widget-footer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 15px;
+  box-shadow: 0 2px 4px RGB(15 34 58 / 31%) !important;
+}
+
+.widget-modal-save-btn {
+  width: 130px !important;
+}
+
+.text-align-btns-container, .image-size-btns-container {
+  display: flex;
+  gap: 7px;
+}
+
+.widget-align-text-icon {
+  width: 20px;
+  height: 20px;
+}

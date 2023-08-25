@@ -1,0 +1,16 @@
+.not-found-wrapper {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #0F2333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.not-found-image {
+  width: 50%;
+  height: 52%;
+  margin-bottom: 20px;
+}

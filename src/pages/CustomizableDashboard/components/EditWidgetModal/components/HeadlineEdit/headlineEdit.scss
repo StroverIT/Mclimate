@@ -1,0 +1,17 @@
+.headline-textarea {
+  resize: none;
+  width: 100%;
+  font-weight: 500;
+  padding: 25px 10px;
+  box-shadow: RGB(15 34 58 / 7%) 0px 2px 4px;
+  border-radius: 7px;
+  border: 1px solid rgb(228, 228, 228);
+}
+
+.headline-textarea:focus-visible {
+  outline: none !important;
+}
+
+.select-size {
+  width: 100px !important;
+}

@@ -1,0 +1,53 @@
+.device-field-labels-container {
+  display: flex;
+  width: 100%;
+  gap: 4%;
+}
+
+.chart-fragment-settings-container {
+  border: 1px solid #e7e7e7;
+  min-height: 250px;
+  width: 100%;
+  padding: 0 10px 10px 10px;
+  border-radius: 7px;
+}
+
+.chart-fragment-settings-container h6 {
+  margin-bottom: 0 !important;
+}
+
+.fragment-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+}
+
+.selected-device-container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.selected-device-container h6{
+  font-weight: 400;
+  color: #75788B;
+}
+
+.wide-button {
+  padding: 10px 30px 10px 30px !important;
+}
+
+.delete-value-button {
+  padding: 0 3px 0 3px !important;
+  background-color: rgb(241, 240, 245);
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #D84C63;
+}

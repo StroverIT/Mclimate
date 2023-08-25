@@ -1,0 +1,75 @@
+// 
+// _buttons.scss
+// 
+
+button,a {
+  outline: none !important;
+}
+
+
+// Rounded Buttons
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.btn-dark, .btn-secondary{
+  color: $gray-200;
+}
+
+.btn-outline-light{
+  color: $gray-900;
+}
+
+.primary-white-button, .primary-white-btn-active {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px !important;
+}
+
+.primary-white-btn-active {
+  color: #55AEE1 !important;
+  border: 1px solid #55AEE1 !important;
+  background-color: white !important;
+}
+
+.primary-white-button {
+  color: #8b8a8a !important;
+  border: 1px solid #e4e4e4 !important;
+  background-color: white !important;
+}
+
+.primary-white-button:focus, .primary-white-btn-active:focus {
+  box-shadow: none !important;
+}
+
+.primary-gray-btn {
+  background: #EDECF1 !important;
+  border-color: #EDECF1 !important;
+  // color: #595959;
+  color: #060606;
+  box-shadow: unset !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  padding: 2px 10px;
+  &:hover, &:focus{
+    opacity: 0.8;
+    background: #EDECF1 !important;
+    border-color: #EDECF1 !important;
+    color: #595959;
+  }
+}
+
+// btn-soft-color
+
+@each $color,
+$value in $theme-colors {
+    .btn-soft-#{$color} {
+        background-color: rgba(($value), 0.25);
+        border-color: rgba(($value), 0.25);
+        color: $value;
+    }
+}

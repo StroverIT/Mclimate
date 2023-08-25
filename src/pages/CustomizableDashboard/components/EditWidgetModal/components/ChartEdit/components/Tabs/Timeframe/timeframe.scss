@@ -1,0 +1,34 @@
+.chart-widget-timeframe-step h6 {
+  margin-bottom: 0 !important;
+}
+
+.frame-btns-container {
+  display: flex;
+  gap: 7px;
+}
+
+.wide-button {
+  padding: 10px 30px 10px 30px !important;
+}
+
+.operation-period, .flatpickr-container {
+  display: flex;
+  width: 100%;
+  gap: 4%;
+}
+
+.chart-widget-datepicker {
+  width: 48% !important;
+  position: relative;
+}
+
+.chart-widget-datepicker {
+  padding: 0 !important;
+  .flatpickr-input {
+    border-radius: 0.25rem;
+    background-color: #fff !important;
+    border: 1px solid #d3d8de !important;
+    width: 45% !important;
+    text-align: left !important;
+  }
+}

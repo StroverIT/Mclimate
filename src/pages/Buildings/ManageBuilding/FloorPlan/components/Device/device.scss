@@ -1,0 +1,180 @@
+.fp-device-wrapper {
+  display: flex;
+}
+
+.fp-device-wrapper-badges {
+  display: flex;
+  width: 400px;
+}
+
+.device-image, .device-image-online {
+  width: 40px;
+  height: 40px;
+  margin-right: 7px;
+  background-size: cover;
+  background-color: white;
+  border: 1px solid #b5b5b5;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 7px 19px 0 rgba(53, 53, 53, 0.32);
+}
+
+//.device-svg {
+//  height: 30px;
+//  width: 30px;
+//}
+
+.device-image-selected {
+  //width: 60px !important;
+  //height: 60px !important;
+  border: 2px solid #54A9DB !important;
+}
+
+//.device-image-selected .device-svg {
+//  height: 45px !important;
+//  width: 45px !important;
+//}
+
+.device-image-online::before {
+  content: '';
+  position: absolute;
+  width: var(--online-width);
+  height: var(--online-height);
+  background-color: #2a9c72;
+  border: 2px solid white;
+  border-radius: 50%;
+  left: var(--online-left);
+  top: var(--online-top);
+  box-shadow: 4px 6px 13px 0 rgba(0, 0, 0, 0.3);
+}
+
+.device-badges {
+  display: flex;
+  gap: 7px;
+  width: 210px;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+
+.device-badge {
+  border: 1px solid #b5b5b566;
+  border-radius: 20px;
+  background-color: white;
+  padding: 0 7px;
+  font-weight: 500;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  box-shadow: 0 0 5px 0 rgba(53, 53, 53, 0.16);
+}
+
+.badges-selected .device-badge {
+  border: 2px solid #54A9DB !important;
+}
+
+.name-wrapper {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.refresh-device-btn {
+  border-radius: 20px;
+  font-weight: 500;
+  max-height: 26px;
+}
+
+.active-refresh-btn {
+  height: 26px;
+  padding: 0 10px;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.refresh-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  height: 26px;
+  width: 26px;
+  padding: 0 !important;
+  background-color: #fff !important;
+  color: #54A9DB !important;
+  border: 1px solid #b5b5b566 !important;
+}
+
+.device-info-block-wrapper {
+  padding: 10px;
+  position: relative;
+}
+
+.info-block-selected {
+  border: 2px solid #54A9DB !important;
+  border-radius: 4px;
+}
+.info-block-selected #info-block-name{
+  color: #54A9DB !important;
+}
+
+.unselect-device {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  font-size: 20px;
+  height: 22px;
+  width: 22px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  color: #6d6c6c;
+}
+
+.control-device-btn-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.control-device-btn-container > button {
+  width: 95% !important;
+  cursor: pointer;
+}
+
+.device-badge span {
+  font-size: 11px;
+}
+
+.fp-device-name {
+  color: #54A9DB;
+}
+
+.target-temperature {
+  color: #FFA000;
+}
+.battery-span {
+  display: flex;
+  align-items: center;
+  color: #61DC00;
+}
+
+.fp-battery {
+  font-size: 10px;
+}
+
+.humidity-icon {
+  height: 20px;
+}
+
+.humidity-container {
+  color: #54A9DB;
+}

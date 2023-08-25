@@ -1,0 +1,34 @@
+/* LAYOUT */
+export const CHANGE_LAYOUT = "CHANGE_LAYOUT"
+export const CHANGE_LAYOUT_WIDTH = "CHANGE_LAYOUT_WIDTH"
+export const CHANGE_SIDEBAR_THEME = "CHANGE_SIDEBAR_THEME"
+export const CHANGE_SIDEBAR_TYPE = "CHANGE_SIDEBAR_TYPE"
+
+// topbar
+export const CHANGE_TOPBAR_THEME = "CHANGE_TOPBAR_THEME"
+
+// show sidebar
+export const SHOW_SIDEBAR = "SHOW_SIDEBAR"
+export const TOGGLE_LEFTMENU = "TOGGLE_LEFTMENU"
+
+/* RIGHT SIDEBAR */
+export const SHOW_RIGHT_SIDEBAR = "SHOW_RIGHT_SIDEBAR"
+
+// Preloader
+export const CHANGE_PRELOADER = "CHANGE_PRELOADER"
+
+// Dashboard
+export const CHANGE_DASHBOARD_MODE = "CHANGE_DASHBOARD_MODE"
+export const SET_DASHBOARD_DATE = "SET_DASHBOARD_DATE"
+
+// Table columns filter
+export const SET_TABLE_COLUMNS = "SET_TABLE_COLUMNS"
+
+export const SET_ERROR = "SET_ERROR"
+
+export const ADD_TOAST = "ADD_TOAST"
+export const CLEAR_TOAST = "CLEAR_TOAST"
+export const GET_APP_DATA = "GET_APP_DATA"
+export const LOADING_APP_DATA = "LOADING_APP_DATA"
+
+

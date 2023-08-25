@@ -1,0 +1,53 @@
+.chart-axis-settings-container {
+  border: 1px solid #e7e7e7;
+  min-height: 250px;
+  width: 100%;
+  padding: 0 10px 10px 10px;
+  border-radius: 7px;
+}
+
+.chart-axis-settings-container h6 {
+  margin-bottom: 0 !important;
+}
+
+.axis-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+}
+
+.axis-h6-container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.axis-status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.axis-h6 {
+  margin: 0;
+  font-weight: 400;
+  color: #75788B;
+}
+
+.orientation-btns-container {
+  display: flex;
+  gap: 7px;
+}
+
+.domain-controls {
+  width: 47.5%;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  flex-wrap: wrap;
+  .input-group-container {
+    flex-grow: 1;
+  }
+}

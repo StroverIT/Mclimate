@@ -1,0 +1,28 @@
+.widget-image-container {
+  display: flex;
+  justify-content: center;
+  height: 300px; /* or other desired height */
+  overflow: hidden;
+  position: relative;
+}
+.widget-image-container img {
+  flex: none;
+}
+.upload-image-to-widget {
+  background: #fff !important;
+  border-color: #ffffff !important;
+  color: #595959;
+  box-shadow: RGB(15 34 58 / 20%) 0 0 5px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+}
+.image-widget-url {
+  width: 80% !important;
+}
+.widget-image-size-icon {
+  width: 20px;
+  height: 20px;
+}

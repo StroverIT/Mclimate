@@ -1,0 +1,21 @@
+.boolean-widget {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.boolean-dashboard-widget-header {
+  padding: 20px 0 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.boolean-widget-header p {
+  color: #636363;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.boolean-dashboard-header-icon {
+  font-size: 16px;
+  margin-right: 5px;
+}

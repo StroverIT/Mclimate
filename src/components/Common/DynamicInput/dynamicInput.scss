@@ -1,0 +1,26 @@
+.add-new-input {
+  background-color: #F3F8FB !important;
+  color: #57AFDF !important;
+  width: calc(100% - 31px);
+  border-radius: 5px !important;
+  border-color: transparent !important;
+  margin-top: 10px;
+}
+.add-new-input-expanded {
+  width: 100% !important;
+}
+.dynamic-input-container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  gap: 2px;
+}
+.dynamic-input-field {
+  width: 100%;
+}
+.icon-button {
+  padding: 0 3px 0 3px !important;
+}
+.icon-button:hover {
+  border-radius: 3px !important;
+}

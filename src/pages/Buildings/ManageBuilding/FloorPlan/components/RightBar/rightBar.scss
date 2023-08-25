@@ -1,0 +1,67 @@
+.right-bar-floor-plan {
+  background-color: #fff;
+  //width: 350px;
+  height: calc(100vh - 225px);
+}
+
+.right-bar-device-container {
+  padding: 5px;
+}
+
+.right-bar-container {
+  padding: 10px;
+}
+
+.splitter-layout .splitter-layout-vertical {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.remove-device-btn-container {
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+}
+
+.remove-device-btn {
+  color: #D84C63 !important;
+  width: 100%;
+}
+
+.remove-device-btn-text {
+  width: 100%;
+  text-align: center;
+}
+
+.device-list-header {
+  font-size: 17px;
+}
+
+.search-for-devices-outer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.search-for-devices-inner-container {
+  width: 97%;
+}
+
+.search-for-devices-input {
+  background-color: #F8F9FB !important;
+}
+
+.nested-devices-container {
+  border: 1px solid #F2F2F2;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.building-image {
+  margin-right: 10px;
+}
+
+.building-name-hr {
+  margin-top: 10px;
+}

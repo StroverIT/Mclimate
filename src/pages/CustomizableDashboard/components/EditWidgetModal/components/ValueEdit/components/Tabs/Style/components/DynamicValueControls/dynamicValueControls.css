@@ -1,0 +1,33 @@
+.add-new-value-control {
+    background-color: #F3F7FA !important;
+    color: #57AFDF !important;
+    width: 100%;
+    border-radius: 5px !important;
+    border-color: transparent !important;
+    margin-top: 10px;
+}
+.add-new-input-expanded {
+    width: 100% !important;
+}
+.dynamic-input-container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+.dynamic-input-field {
+    width: 100%;
+}
+.delete-value-button {
+    padding: 0 3px 0 3px !important;
+    background-color: rgb(241, 240, 245);
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #D84C63;
+}

@@ -1,0 +1,27 @@
+.color-selection-container {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.color-picker {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-selector-input {
+  width: 100px !important;
+  padding-right: 5px !important;
+  margin-left: 10px !important;
+  background-color: #fff !important;
+}
+
+.color-picker-icon {
+  width: 18px;
+  height: 18px;
+}

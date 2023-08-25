@@ -1,0 +1,35 @@
+.widget-card {
+  height: 230px;
+  cursor: pointer;
+  width: 30.3%;
+  display: flex !important;
+  justify-content: center;
+  border-radius: 10px !important;
+  border: 1px solid #757d836e !important;
+  box-shadow: unset !important;
+  min-width: 200px !important;
+}
+.widget-card:hover {
+  box-shadow: 0 2px 4px RGB(15 34 58 / 31%) !important;
+}
+.widget-icon-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  height: 135px;
+}
+.widget-icon {
+  width: 70px;
+}
+.widget-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #79868A;
+  flex: unset !important;
+}
+
+.widget-card-body > h5 {
+  color: #79868A;
+}

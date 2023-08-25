@@ -1,0 +1,36 @@
+.mix-chart-container-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: calc(100% - 67px);
+}
+
+.mix-chart-container {
+  width: 90%;
+  height: 100%;
+}
+
+.mix-chart-widget-header {
+  padding: 20px 0 0 20px;
+  // padding: 10px 0 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.mix-chart-widget-header p {
+  color: #636363;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.mix-chart-header-icon {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .mix-chart-container {
+    transform: scale(0.85);
+    width: 100%;
+  }
+}

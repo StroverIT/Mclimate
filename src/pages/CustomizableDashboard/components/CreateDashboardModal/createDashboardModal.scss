@@ -1,0 +1,53 @@
+.modal-create-dashboard-footer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 15px;
+  box-shadow: 0 2px 4px RGB(15 34 58 / 31%) !important;
+}
+
+.visibility-btns-container {
+  display: flex;
+  gap: 7px;
+}
+
+.dashboard-icons {
+  display: flex;
+  flex-wrap: wrap;
+  height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 15px 0;
+}
+
+.dashboard-icon-container {
+  cursor: pointer;
+}
+
+.icon-dashboard:hover {
+  border: 2px solid #55AEE1 !important;
+}
+
+.selected-icon {
+  border: 2px solid #55AEE1 !important;
+}
+
+.no-icons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-icons h4 {
+  color: #74788d !important;
+}
+
+.no-icons > .uil-annoyed {
+  border: none;
+  font-size: 40px;
+}
