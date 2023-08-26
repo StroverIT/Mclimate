@@ -1,0 +1,44 @@
+.boolean-widget-icons {
+  display: flex;
+  flex-wrap: wrap;
+  height: 185px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 15px 0;
+}
+.icon-input {
+  width: 48% !important;
+}
+
+
+.boolean-widget-icon:hover {
+  border: 2px solid #55AEE1 !important;
+}
+
+.selected-icon {
+  border: 2px solid #55AEE1 !important;
+}
+
+.icon-container {
+  cursor: pointer;
+}
+
+.no-icons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-icons h4 {
+  color: #74788d !important;
+}
+
+.no-icons > .uil-annoyed {
+  border: none;
+  font-size: 40px;
+}

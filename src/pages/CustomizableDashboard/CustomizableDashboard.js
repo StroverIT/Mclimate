@@ -107,7 +107,6 @@ const CustomizableDashboard = () => {
       }
 
       const responses = response.widgets;
-
       DashboardUtils.widgets = responses.map(widget => {
         return { ...widget, coordinates: JSON.parse(widget.coordinates), size: JSON.parse(widget.size) }
       });

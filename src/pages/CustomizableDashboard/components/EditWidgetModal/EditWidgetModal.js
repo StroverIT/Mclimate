@@ -1,16 +1,33 @@
+// Styles
+import './editWidgetModal.scss'
+
+// React 
 import React, { createRef } from 'react';
+import { useParams } from "react-router-dom";
 import { Button, Modal, ModalBody, ModalHeader } from "reactstrap";
-import { useDispatch, useSelector } from "react-redux";
-import { openCloseEditWidgetModal, setDashboard } from "../../../../store/customizableDashboard/actions";
+
+
+// Utils
 import { renderWidgetBody } from "./ModalHelper/ModalHelper";
+import AppUtils from "../../../../common/AppUtils";
+
+// Componenst
 import DashboardUtils from "../../DashboardUtils";
-import { initialState } from "../../../../store/valuePreview/reducer";
+
+
+// --- Redux ----
+import { useDispatch, useSelector } from "react-redux"
+
+// Actions
+import { openCloseEditWidgetModal, setDashboard } from "../../../../store/customizableDashboard/actions";
+import { hideSpinner, showSpinner } from "../../../../store/spinner/actions";
+
+// Reducers
 import { initialChartWidgetState } from "../../../../store/chartWidget/reducer";
 import { initialBooleanWidgetState } from "../../../../store/booleanWidget/reducer";
-import { useParams } from "react-router-dom";
-import { hideSpinner, showSpinner } from "../../../../store/spinner/actions";
-import AppUtils from "../../../../common/AppUtils";
-import './editWidgetModal.scss'
+import { initialIframeWidgetState } from '../../../../store/iframeWidget/reducer';
+import { initialState } from "../../../../store/valuePreview/reducer";
+
 
 const EditWidgetModal = () => {
   const dispatch = useDispatch();
@@ -28,6 +45,7 @@ const EditWidgetModal = () => {
     if (widgetRef.current.checkFieldsValidity()) {
       const updatedWidget = widgetRef.current.getWidgetData();
       let foundWidgetIndex = dashboardCopy.widgets.findIndex(widget => parseInt(widget.id) === parseInt(updatedWidget.i));
+
       if (foundWidgetIndex === -1) {
         // CREATE WIDGET
         let newDashboardWidget = {};
@@ -76,6 +94,18 @@ const EditWidgetModal = () => {
               data: { ...booleanData }
             }
             break;
+            case 'iframe':
+              const iframeData = getWidgetData(updatedWidget, initialIframeWidgetState.values);
+              newDashboardWidget = {
+                id: widget.i,
+                type: widget.type,
+                coordinates: [widget.x, widget.y],
+                size: [widget.w, widget.h],
+                component: widget.component,
+                settings: { settings: { ...updatedWidget.config.settings } },
+                data: { ...iframeData }
+              }
+              break;
           case 'image':
             newDashboardWidget = {
               id: updatedWidget.i,
@@ -101,6 +131,7 @@ const EditWidgetModal = () => {
         postWidget(newDashboardWidget, dashboardCopy);
       } else {
         switch (updatedWidget.type) {
+          
           case 'value':
             const settings = {
               settings: updatedWidget.config.settings,
@@ -140,6 +171,16 @@ const EditWidgetModal = () => {
             dashboardCopy.widgets[foundWidgetIndex] = { ...dashboardCopy.widgets[foundWidgetIndex], ...config }
             DashboardUtils.widgets[foundWidgetIndex] = { ...DashboardUtils.widgets[foundWidgetIndex], ...config }
             break;
+            case "iframe":
+                const iFrameSettings = {
+                  settings: updatedWidget.config.settings,
+                }
+                const iframeData = getWidgetData(updatedWidget, initialIframeWidgetState.values);
+                console.log("updated data", iframeData);
+
+                dashboardCopy.widgets[foundWidgetIndex] = { ...dashboardCopy.widgets[foundWidgetIndex], settings: { ...iFrameSettings }, data: { ...iframeData } }
+                DashboardUtils.widgets[foundWidgetIndex] = { ...DashboardUtils.widgets[foundWidgetIndex], settings: { ...iFrameSettings }, data: { ...iframeData } }
+                break;
           default:
             dashboardCopy.widgets[foundWidgetIndex] = { ...dashboardCopy.widgets[foundWidgetIndex], ...updatedWidget.config }
             DashboardUtils.widgets[foundWidgetIndex] = { ...DashboardUtils.widgets[foundWidgetIndex], ...updatedWidget.config }

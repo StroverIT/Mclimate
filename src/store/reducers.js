@@ -12,6 +12,8 @@ import customizableDashboard from "./customizableDashboard/reducer";
 import widgetValueComponent from "./valuePreview/reducer";
 import chartWidget from "./chartWidget/reducer";
 import booleanWidget from "./booleanWidget/reducer";
+import iframeWidget from "./iframeWidget/reducer";
+
 
 const rootReducer = combineReducers({
   Layout,
@@ -21,7 +23,8 @@ const rootReducer = combineReducers({
   customizableDashboard,
   widgetValueComponent,
   chartWidget,
-  booleanWidget
+  booleanWidget,
+  iframeWidget
 
 })
 

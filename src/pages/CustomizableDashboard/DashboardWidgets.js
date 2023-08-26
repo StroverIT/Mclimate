@@ -12,6 +12,10 @@ import Value from "./components/Widgets/Value/Value";
 import Boolean from "./components/Widgets/Boolean/Boolean";
 import Chart from "./components/Widgets/Chart/Chart";
 
+// Newly create widget 
+import IFrame from "./components/Widgets/IFrame/IFrame";
+
+
 export const Widgets = [
   {
     component: <Headline/>,
@@ -82,5 +86,19 @@ export const Widgets = [
     title: "Chart",
     description: "Displays a chart",
     icon: chartIcon
+  },
+  {
+    component: <IFrame/>,
+    type: 'iframe',
+    title: "IFrame",
+    description: "Displays a IFrame",
+    icon: chartIcon,
+   
+    settings: {
+      textAlign: "center",
+      size: 1,
+      backgroundColor: "#fff",
+      color: "#55ADE1"
+    }
   },
 ]

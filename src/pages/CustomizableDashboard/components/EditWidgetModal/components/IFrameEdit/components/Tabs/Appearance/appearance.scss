@@ -1,0 +1,9 @@
+.boolean-widget-text-input-container {
+  width: 43%;
+}
+
+@media (max-width: 1200px) {
+  .boolean-widget-text-input-container {
+    width: 64%;
+  }
+}

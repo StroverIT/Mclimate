@@ -42,11 +42,19 @@ const WidgetCard = ({widget}) => {
         newWidget.w = 5;
         newWidget.h = 3;
         break;
+      case 'iframe':
+        newWidget.w = 5;
+          newWidget.h = 7;
+          // Not sure if this must be change when is full screen
+        // if(fullScreen){
+        //   newWidget.w = 12;
+        //   newWidget.h = 17;
+        // }
+        break;
       default:
         newWidget.w = 4;
         newWidget.h = 2;
     }
-
     batch(() => {
       dispatch(setEditWidget(newWidget));
       dispatch(openCloseWidgetModal(false));

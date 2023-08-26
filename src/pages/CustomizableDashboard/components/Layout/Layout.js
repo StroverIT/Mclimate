@@ -31,6 +31,7 @@ import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 import './layout.scss'
 import { hideSpinner, showSpinner } from "../../../../store/spinner/actions";
+import { setIframeWidgetValues } from '../../../../store/iframeWidget/actions';
 
 let newWidgetId = -1;
 
@@ -146,6 +147,7 @@ const Layout = () => {
   }
 
   const getMinDimensionsForWidget = (widget) => {
+    // console.log("widget", widget, widget.type);
     switch (widget.type) {
       case 'value':
         return {
@@ -228,6 +230,7 @@ const Layout = () => {
 
   const openEditWidgetModal = (widget) => {
     let widgetData = widget;
+    console.log(widget.type);
     if (widget.type === "value") {
       editValueWidget(widget);
     }
@@ -237,6 +240,10 @@ const Layout = () => {
     }
     if (widget.type === "boolean") {
       editBooleanWidget(widget);
+    }
+    if(widget.type === "iframe"){
+      editIframeWidget(widget);
+
     }
     batch(() => {
       dispatch(setEditWidget(widgetData));
@@ -349,7 +356,7 @@ const Layout = () => {
       dispatch(setBooleanWidgetValues(widgetData));
     }
   }
-
+ 
   const editChartWidget = (widget) => {
     dispatch(showSpinner());
     const widgetData = {
@@ -391,7 +398,23 @@ const Layout = () => {
         })
       })
   }
+  const editIframeWidget = (widget) => {
+    const widgetData = {
+      type: widget.type,
+      i: widget.i,
+      h: parseInt(widget.h),
+      w: parseInt(widget.w),
+      x: parseInt(widget.x),
+      y: parseInt(widget.y),
+      component: widget.component,
+      isResizable: widget.isResizable,
+      ...widget.config.data,
+      config: { ...widget.config.settings }
+    }
+    dispatch(setIframeWidgetValues(widgetData));
 
+   
+  }
   const removeWidget = (id) => {
     const dashboardCopy = DashboardUtils.copyDashboard(dashboard);
     const index = dashboardCopy.widgets.findIndex(widget => widget.id === id);

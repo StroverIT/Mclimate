@@ -5,6 +5,10 @@ import ValueEdit from "../components/ValueEdit/ValueEdit";
 import ChartEdit from "../components/ChartEdit/ChartEdit";
 import BooleanEdit from "../components/BooleanEdit/BooleanEdit";
 
+// 
+import IFrameEdit from "../components/IFrameEdit/IFrameEdit";
+
+
 export const renderWidgetBody = (widget, ref) => {
   if (widget) {
     switch (widget.type) {
@@ -20,6 +24,8 @@ export const renderWidgetBody = (widget, ref) => {
         return <ChartEdit widget={widget} ref={ref}/>
       case 'boolean':
         return <BooleanEdit widget={widget} ref={ref}/>
+        case 'iframe':
+          return <IFrameEdit widget={widget} ref={ref}/>
       default:
         return <div>Ooops, something went wrong</div>
     }
